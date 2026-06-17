@@ -202,6 +202,54 @@ These insights help improve dataset quality and model performance.
 
 ---
 
+# 🏗️ Project Workflow
+
+```mermaid
+flowchart TD
+
+A[🌡️ Thermal Image Dataset Collection]
+--> B[📦 Extract Images & Labels]
+
+B --> C[📊 Dataset Analysis]
+C --> C1[Human Count Distribution]
+C --> C2[Statistical Analysis]
+C --> C3[Class Balance Inspection]
+
+C --> D[⚖️ Dataset Balancing]
+D --> D1[Square-Root Sampling]
+D --> D2[Balanced Human Distribution]
+
+D --> E[🌈 Image Enhancement]
+E --> E1[CLAHE Processing]
+E1 --> E2[Improved Thermal Contrast]
+
+E2 --> F[🔄 Data Augmentation]
+F --> F1[Rotation]
+F --> F2[Scaling]
+F --> F3[Transformations]
+F --> F4[Image Variations]
+
+F --> G[☁️ Roboflow Integration]
+G --> G1[Dataset Upload]
+G --> G2[Annotation Management]
+G --> G3[Dataset Versioning]
+
+G --> H[📂 COCO Dataset Export]
+
+H --> I[🤖 YOLO Training]
+
+I --> J[🎯 Human Detection Model]
+
+J --> K[📈 Evaluation & Validation]
+
+K --> L[🚀 Real-World Deployment]
+
+L --> L1[🔥 Fire & Rescue]
+L --> L2[🌙 Night Surveillance]
+L --> L3[🚁 Search & Rescue]
+L --> L4[🏭 Industrial Safety]
+```
+
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
